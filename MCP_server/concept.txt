@@ -1,0 +1,22 @@
+MCP servers expose three main primitives:
+
+Resources
+client-controlled
+
+Exposes data to be used as context to clients on request.
+
+Use a resource when you want to passively expose data or content to an MCP client and let the client choose when to access it.
+
+Tools
+model-controlled
+
+Exposes executable functionality to client models.
+
+Use a tool when you want the client to perform an action, for example to request content from an API, transform data, or send an email.
+
+Prompts
+user-controlled
+
+Exposes reusable prompts and workflows to users.
+
+Use a prompt when you want the client to surface prompts and workflows to the user, for example to streamline interaction with a resource or tool.
