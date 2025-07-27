@@ -5,8 +5,6 @@ from mcp.server.fastmcp import FastMCP
 # Initialize FastMCP server
 mcp = FastMCP("weather")
 
-### The rest of your code goes between here...
-
 OPENMETEO_API_BASE = "https://api.open-meteo.com/v1"
 USER_AGENT = "weather-app/1.0"
 
@@ -42,7 +40,6 @@ async def get_current_weather(latitude: float, longitude: float) -> dict:
         return "Unable to fetch current weather data for this location."
 
     return data
-### ... and here.
 
 if __name__ == "__main__":
     # Initialize and run the server
